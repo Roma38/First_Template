@@ -1,3 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+.header {
+  max-width: 1170px;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center; }
 
+.header__logo {
+  margin-top: 23px; }
+  .header__logo h1 {
+    margin: 0;
+    display: inline-block;
+    font: bold 55px Roboto, sans-serif;
+    color: #62bfe6; }
+  .header__logo h3 {
+    display: inline-block; }
+
+.header__phone {
+  /* text-align: right; */
+  /* float: right; */ }
+  .header__phone span {
+    font: normal 34px FontAwesome;
+    color: #62bfe6; }
+
+@media screen and (min-width: 1000px) {
+  .header__logo {
+    float: left; }
+
+  .header__phone {
+    text-align: right;
+    float: right; } }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  html * {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
+h2 {
+  font: normal 34px/38px Roboto, sans-serif;
+  color: #434547; }
+
+h3 {
+  font: normal 24px/38px Roboto, sans-serif;
+  color: #434547; }
+
+p {
+  font: normal 14px/28px Roboto, sans-serif;
+  color: #888; }
+
+a {
+  text-decoration: none;
+  color: #62bfe6;
+  font: normal 16px Roboto, sans-serif; }
+
+a:hover {
+  color: #434547; }
 
 /*# sourceMappingURL=main.css.map */

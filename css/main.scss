@@ -1,0 +1,50 @@
+@import 'var.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+@import "header.scss";
+
+
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url("../fonts/fontawesome-webfont.woff2") format("woff2"),
+		 url("../fonts/fontawesome-webfont.woff") format("woff");
+}
+
+html {
+	box-sizing: border-box;
+
+	* {
+		box-sizing: inherit;
+	}
+}
+
+body {
+	margin: 0;
+}
+
+h2 {
+	font: normal 34px/38px Roboto, sans-serif;
+	color: $secondary-color;
+}
+
+h3 {
+	font: normal 24px/38px Roboto, sans-serif;
+	color: $secondary-color;
+}
+
+p {
+	font: normal 14px/28px Roboto, sans-serif;
+	color: #888;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color;
+	font: normal 16px Roboto, sans-serif;
+}
+
+a:hover {
+	color: $secondary-color;
+}

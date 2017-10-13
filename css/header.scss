@@ -1,0 +1,48 @@
+@import 'var.scss';
+
+.header {
+	max-width: 1170px;
+	padding: 0 10px;
+	margin: 0 auto;
+	overflow: auto;
+	text-align: center;
+}
+
+
+.header__logo {
+	margin-top: 23px;
+
+	h1 {
+		margin: 0;
+		display: inline-block;
+		font: bold 55px Roboto, sans-serif;
+		color: $primary-color;
+	}
+
+	h3 {
+		display: inline-block;
+	}
+}
+
+.header__phone {
+	/* text-align: right; */
+	/* float: right; */
+
+	span {
+		font: normal 34px FontAwesome;
+		color: $primary-color;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+
+	.header__logo {
+		float: left;
+	}
+
+	.header__phone {
+		text-align: right;
+		float: right;
+	}
+
+}
