@@ -1,8 +1,78 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+.toggle--mobile {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  z-index: 2;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1); }
+
+.toggleIcon {
+  font: normal 28px FontAwesome;
+  cursor: pointer; }
+
+#navToggle:checked + .nav--mobile {
+  left: 0; }
+
+.nav--mobile {
+  /* display: none; */
+  position: fixed;
+  background: white;
+  z-index: 1;
+  height: 100%;
+  width: 240px;
+  left: -240px;
+  -webkit-transition: left 1s;
+  transition: left 1s;
+  -webkit-box-shadow: 3px 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 0 3px rgba(0, 0, 0, 0.1); }
+
+#navToggle, #navToggle--dropdown {
+  display: none; }
+
+.nav__list--mobile {
+  /* padding-top: 70px; */ }
+
+.nav__item--mobile a {
+  color: #434547;
+  font-size: 14px;
+  display: block;
+  padding: 14px 25px 16px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+
+.nav__item--mobile a:hover {
+  background-color: #62bfe6;
+  color: white; }
+
+.nav__item--mobile .nav__item--mobile a {
+  padding-left: 40px; }
+
+.nav__item--mobile .nav__item--mobile .nav__item--mobile a {
+  padding-left: 55px; }
+
+/* Dropdown menu About */
+.nav__dropdown--mobile {
+  display: none; }
+
+.toggleIcon--dropdown {
+  font: normal 24px FontAwesome;
+  cursor: pointer; }
+
+#navToggle--dropdown:checked + .nav__dropdown--mobile {
+  display: block; }
+
+.about__dropdown {
+  float: right; }
+
 .header {
+  position: relative;
   max-width: 1170px;
   padding: 0 10px;
-  margin: 0 auto;
+  margin: 60px auto 0;
   overflow: auto;
   text-align: center; }
 
@@ -13,7 +83,7 @@
     display: inline-block;
     font: bold 55px Roboto, sans-serif;
     color: #62bfe6; }
-  .header__logo h3 {
+  .header__logo h3, .header__logo .currentPage--mobile {
     display: inline-block; }
 
 .header__phone {
@@ -47,7 +117,7 @@ h2 {
   font: normal 34px/38px Roboto, sans-serif;
   color: #434547; }
 
-h3 {
+h3, .currentPage--mobile {
   font: normal 24px/38px Roboto, sans-serif;
   color: #434547; }
 
@@ -62,5 +132,26 @@ a {
 
 a:hover {
   color: #434547; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .toggle--mobile {
+    display: none; }
+
+  .header {
+    margin-top: 0; }
+
+  .nav--mobile {
+    display: none; }
+
+  .nav {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

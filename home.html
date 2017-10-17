@@ -12,18 +12,49 @@
 
 <body>
 
-<header class="header">
+<div class="toggle--mobile">
+	<label for="navToggle" class="toggleIcon"> </label>
+	<span class="currentPage--mobile">Home</span>
+</div>
 
+<input type="checkbox" id="navToggle">
+<nav class="nav--mobile">
+	<ul class="nav__list--mobile">
+		<li class="nav__item--mobile"><a href="#">Home</a></li>
+		<li class="nav__item--mobile ">
+			<a href="#">About <label class="about__dropdown" for="navToggle--dropdown"><span class="toggleIcon--dropdown"></span></label></a>
+			<input type="checkbox" id="navToggle--dropdown">
+			<ul class="nav__dropdown--mobile">
+				<li class="nav__item--mobile"><a href="#">Lorem ipsum dolor</a></li>
+				<li class="nav__item--mobile"><a href="#">Conse ctetur adipisicing</a></li>
+				<li class="nav__item--mobile"><a href="#">Elit sed do eiusmod</a>
+					<ul>
+						<li class="nav__item--mobile"><a href="#">Lorem ipsum</a></li>
+						<li class="nav__item--mobile"><a href="#">Conse ctetur</a></li>
+						<li class="nav__item--mobile"><a href="#">Sit amet dolore</a></li>
+					</ul>
+				</li>
+				<li class="nav__item--mobile"><a href="#">Incididunt ut labore</a></li>
+				<li class="nav__item--mobile"><a href="#">Et dolore magna</a></li>
+				<li class="nav__item--mobile"><a href="#">Ut enim ad minim</a></li>	
+			</ul>
+		</li>
+		<li class="nav__item--mobile"><a href="#">Services</a></li>
+		<li class="nav__item--mobile"><a href="#">FAQs</a></li>
+		<li class="nav__item--mobile"><a href="#">Contacts</a></li>
+	</ul>
+</nav>
+
+<header class="header">	
 	<div class="header__logo">
 		<h1>Business </h1> 
 		<h3>Company</h3>
 	</div>
 
 	<div class="header__phone">
-		<h3><span> </span>800-2345-6789</h3>
+		<h3><span> </span>800-2345-6789</h3> <!-- TODO: this is not a header (h3) -->
 		<p>One of our representatives will happily contact you within 24 hours. For urgent needs call us at</p>
 	</div>
-
 </header>
 
 <nav class="nav">
@@ -104,7 +135,7 @@
 
 		<article class="home-block2-column1">
 			<h2>About</h2>
-			<img src="images/page-1_img01.jpg">
+			<img src="images/page-1_img01.jpg" alt="">
 			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu.<br>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 			<button>Read more</button>
 			<a href="#" class="button">Read more</button>
@@ -141,7 +172,7 @@
 			</div>
 
 			<div class="small-carousel">
-				<img src="images/page-1_img02.jpg">
+				<img src="images/page-1_img02.jpg" alt="">
 				<p><span></span> Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
 				<a href="#">Incididunt ut labor</a>
 			</div>

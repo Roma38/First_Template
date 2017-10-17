@@ -2,9 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+@import "mobile-nav.scss";
+
 @import "header.scss";
-
-
 
 @font-face {
 	font-family: "FontAwesome";
@@ -47,4 +47,34 @@ a {
 
 a:hover {
 	color: $secondary-color;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav {
+	display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.toggle--mobile {
+		display: none;
+	}
+
+	.header {
+		margin-top: 0;
+	}
+
+	.nav--mobile {
+		display: none;
+	}
+
+	.nav {
+		display: block;
+	}
 }
