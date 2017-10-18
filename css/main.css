@@ -100,6 +100,84 @@
   .header__phone {
     text-align: right;
     float: right; } }
+.nav {
+  height: 60px;
+  background: #434547; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: flex-start; */
+  height: 100%;
+  max-width: 1170px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.nav__item {
+  border-right: 1px solid #56585a;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.nav__item:first-child {
+  border-left: 1px solid #56585a; }
+
+.nav__item.active, .nav__item:hover {
+  background: #62bfe6;
+  border-right: 1px solid #72c6e9; }
+
+.nav__item__link {
+  font: 500 16px Roboto, sans-serif;
+  text-transform: uppercase;
+  padding: 0 30px;
+  color: white; }
+
+.nav__item__link:hover {
+  color: white; }
+
+.nav__dropdown {
+  display: none; }
+
+/* Dropdown menu */
+.nav__item:hover > .nav__dropdown {
+  display: block; }
+
+.nav__dropdown {
+  position: absolute;
+  top: 100%;
+  background: #f2f2f2;
+  width: 245px; }
+
+.nav__dropdown__item {
+  height: 50px;
+  border-top: 1px solid #e5e5e5;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.aside-menu-arrow {
+  padding-left: 40px;
+  font: normal 16px FontAwesome; }
+
+/* Dropdown aside menu */
+.nav__dropdown__item:hover > .nav__dropdown--aside {
+  display: block; }
+
+.nav__dropdown.nav__dropdown--aside {
+  top: 0;
+  left: 100%; }
+
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
