@@ -70,7 +70,7 @@
 
 .header {
   position: relative;
-  max-width: 1170px;
+  max-width: 1190px;
   padding: 0 10px;
   margin: 60px auto 0;
   overflow: auto;
@@ -84,14 +84,16 @@
     font: bold 55px Roboto, sans-serif;
     color: #62bfe6; }
   .header__logo h3, .header__logo .currentPage--mobile {
+    margin-left: 7px;
     display: inline-block; }
 
-.header__phone {
-  /* text-align: right; */
-  /* float: right; */ }
-  .header__phone span {
-    font: normal 34px FontAwesome;
-    color: #62bfe6; }
+.header__phone h3, .header__phone .currentPage--mobile {
+  margin-bottom: -11px; }
+.header__phone span {
+  font: normal 34px FontAwesome;
+  /* font: normal 34px FontAwesome; */
+  color: #62bfe6;
+  margin-right: 10px; }
 
 @media screen and (min-width: 1000px) {
   .header__logo {
@@ -110,7 +112,7 @@
   display: flex;
   /* justify-content: flex-start; */
   height: 100%;
-  max-width: 1170px;
+  max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto; }
 
@@ -168,14 +170,15 @@
 
 .aside-menu-arrow {
   padding-left: 40px;
-  font: normal 16px FontAwesome; }
+  font: normal 16px FontAwesome;
+  /* font: normal 16px FontAwesome; */ }
 
 /* Dropdown aside menu */
 .nav__dropdown__item:hover > .nav__dropdown--aside {
   display: block; }
 
 .nav__dropdown.nav__dropdown--aside {
-  top: 0;
+  top: -1px;
   left: 100%; }
 
 @font-face {

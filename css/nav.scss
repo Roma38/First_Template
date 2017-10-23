@@ -1,3 +1,5 @@
+@import 'var.scss';
+
 .nav {
 	height: 60px;
 	background: $secondary-color;
@@ -7,7 +9,7 @@
 	display: flex;
 	/* justify-content: flex-start; */
 	height: 100%;
-	max-width: 1170px;
+	max-width: 1190px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -68,7 +70,8 @@
 
 .aside-menu-arrow {
 	padding-left: 40px; 
-	font: normal 16px FontAwesome;
+	@include awesome-icon(16px);
+	/* font: normal 16px FontAwesome; */
 }
 
  /* Dropdown aside menu */
@@ -78,6 +81,6 @@
 }
 
 .nav__dropdown.nav__dropdown--aside {
-	top: 0;
+	top: -1px;
 	left: 100%;
 }

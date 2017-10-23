@@ -4,7 +4,7 @@
 
 .header {
 	position: relative;
-	max-width: 1170px;
+	max-width: 1190px;
 	padding: 0 10px;
 	margin: 60px auto 0;
 	overflow: auto;
@@ -23,17 +23,22 @@
 	}
 
 	h3 {
+		margin-left: 7px;
 		display: inline-block;
 	}
 }
 
 .header__phone {
-	/* text-align: right; */
-	/* float: right; */
+
+	h3 {
+		margin-bottom: -11px;
+	}
 
 	span {
-		font: normal 34px FontAwesome;
+		@include awesome-icon(34px);
+		/* font: normal 34px FontAwesome; */
 		color: $primary-color;
+		margin-right: 10px;
 	}
 }
 
