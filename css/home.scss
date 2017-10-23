@@ -1,5 +1,7 @@
 @import 'var.scss';
 
+$arrow-icon-size: 19px;
+
 /* SLIDER */
 
 .slider {
@@ -22,6 +24,11 @@
 	left: 50%;
 }
 
+.slider + .home-block1 .blueBoxes {
+	position: relative;
+	margin-top: -50px;
+}
+
 .home-block1, .home-block2 {
 	max-width: 1190px;
 	padding: 0 10px;
@@ -29,10 +36,6 @@
 }
 
 /* BLUE BOXES */
-
-.boxesWrap {
-	position: relative;
-}
 
 .blueBoxes {
 	display: flex;
@@ -45,7 +48,6 @@
 	flex-grow: 1;
 	flex-basis: 500px;
 	align-items: flex-end;
-	/* min-width: 50%; */
 }
 
 .blueBoxes__item {
@@ -81,7 +83,7 @@
 
 .blueBoxes p::after {
 	content: "";
-	@include awesome-icon(19px);
+	@include awesome-icon($arrow-icon-size);
 	display: block;
 	text-align: right;
 	position: relative;
@@ -96,25 +98,15 @@
 }
 
 @media screen and (min-width: 1020px) {
-	.blueBoxes {
-		position: absolute;
-		bottom: 0;
-	}
-
 	.blueBoxes p::after {
 		display: none;
 	}
 
-	.blueBoxes__item:hover p::after {
-		content: "";
-		@include awesome-icon(19px);
-		display: block;
-		text-align: right;
-		position: relative;
-		top: 15px;
-	}
+	.blueBoxes__item:hover {
+		margin-top: -$arrow-icon-size;
 
-	.boxesWrap {
-		height: 375px;
+		p::after {
+			display: block;
+		}
 	}
 }
