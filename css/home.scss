@@ -3,21 +3,18 @@
 /* SLIDER */
 
 .slider {
-	width: 100%; 
 	position: relative;
-	/* z-index: -1; */
 }
 
 .slider__slide {
 	background: #f8f8f8 url("../images/page-1_slide01.jpg") no-repeat 20%;
 	background-size: contain;
-	width: 100%;
 	height: 42vw;
 	min-height: 350px;
 	max-height: 632px;
 }
 
-.slider h1 {
+.slider__text {
 	position: absolute;
 	font: normal 5vw Roboto, sans-serif;
 	color: $primary-color;
@@ -25,7 +22,7 @@
 	left: 50%;
 }
 
-section {
+.home-block1, .home-block2 {
 	max-width: 1190px;
 	padding: 0 10px;
 	margin: 0 auto;
@@ -35,14 +32,11 @@ section {
 
 .boxesWrap {
 	position: relative;
-	/* height: 900px; */
 }
 
 .blueBoxes {
 	display: flex;
 	flex-wrap: wrap;
-	
-	/* justify-content: center; */
 }
 
 .blueBoxes__pair {

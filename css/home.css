@@ -1,39 +1,34 @@
 @charset "UTF-8";
 /* SLIDER */
 .slider {
-  width: 100%;
-  position: relative;
-  /* z-index: -1; */ }
+  position: relative; }
 
 .slider__slide {
   background: #f8f8f8 url("../images/page-1_slide01.jpg") no-repeat 20%;
   background-size: contain;
-  width: 100%;
   height: 42vw;
   min-height: 350px;
   max-height: 632px; }
 
-.slider h1 {
+.slider__text {
   position: absolute;
   font: normal 5vw Roboto, sans-serif;
   color: #62bfe6;
   top: 30%;
   left: 50%; }
 
-section {
+.home-block1, .home-block2 {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto; }
 
 /* BLUE BOXES */
 .boxesWrap {
-  position: relative;
-  /* height: 900px; */ }
+  position: relative; }
 
 .blueBoxes {
   display: flex;
-  flex-wrap: wrap;
-  /* justify-content: center; */ }
+  flex-wrap: wrap; }
 
 .blueBoxes__pair {
   display: flex;
