@@ -194,13 +194,17 @@ html {
 body {
   margin: 0; }
 
+h2, h3, .currentPage--mobile {
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+  color: #434547;
+  line-height: 38px; }
+
 h2 {
-  font: normal 34px/38px Roboto, sans-serif;
-  color: #434547; }
+  font-size: 34px; }
 
 h3, .currentPage--mobile {
-  font: normal 24px/38px Roboto, sans-serif;
-  color: #434547; }
+  font-size: 38px; }
 
 p {
   font: normal 14px/28px Roboto, sans-serif;
@@ -236,6 +240,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .toggle--mobile {
+    /* TODO do we need modifier here? */
     display: none; }
 
   .header {

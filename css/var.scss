@@ -1,5 +1,6 @@
 $primary-color: #62bfe6;
 $secondary-color: #434547;
+
 @mixin awesome-icon($font-size) {
 	font: normal $font-size FontAwesome;
 }

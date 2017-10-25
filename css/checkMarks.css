@@ -1,90 +1,18 @@
-/*
-Error: Undefined mixin 'awesome-icon'.
-        on line 14 of C:\Users\romak\Desktop\Barbarossa plan\First_template\css\checkMarks.scss, in `awesome-icon'
-        from line 14 of C:\Users\romak\Desktop\Barbarossa plan\First_template\css\checkMarks.scss
+@charset "UTF-8";
+.checkMarks li {
+  padding: 17px 0 20px;
+  border-top: 1px solid #e5e5e5; }
+  .checkMarks li:first-child {
+    border-top: 0; }
+  .checkMarks li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 42px; }
+    .checkMarks li a::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      font: normal 22px FontAwesome;
+      padding-right: 20px; }
 
-9: 			border-top: 0;
-10: 		}
-11: 
-12: 		a::before {
-13: 			content: "";
-14: 			@include awesome-icon(22px);
-15: 			padding-right: 20px;
-16: 		}
-17: 	}
-18: }
-
-Backtrace:
-C:\Users\romak\Desktop\Barbarossa plan\First_template\css\checkMarks.scss:14:in `awesome-icon'
-C:\Users\romak\Desktop\Barbarossa plan\First_template\css\checkMarks.scss:14
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'awesome-icon'.\A         on line 14 of C:\Users\romak\Desktop\Barbarossa plan\First_template\css\checkMarks.scss, in `awesome-icon'\A         from line 14 of C:\Users\romak\Desktop\Barbarossa plan\First_template\css\checkMarks.scss\A \A 9: 			border-top: 0;\A 10: 		}\A 11: \A 12: 		a::before {\A 13: 			content: \"\";\A 14: 			@include awesome-icon(22px);\A 15: 			padding-right: 20px;\A 16: 		}\A 17: 	}\A 18: }"; }
+/*# sourceMappingURL=checkMarks.css.map */

@@ -43,10 +43,16 @@
   border-top: 1px solid #e5e5e5; }
   .checkMarks li:first-child {
     border-top: 0; }
-  .checkMarks li a::before {
-    content: "";
-    font: normal 22px FontAwesome;
-    padding-right: 20px; }
+  .checkMarks li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 42px; }
+    .checkMarks li a::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      font: normal 22px FontAwesome;
+      padding-right: 20px; }
 
 .home-block1, .home-block2 {
   max-width: 1190px;
