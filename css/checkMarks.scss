@@ -1,0 +1,18 @@
+$li-height: 50px;
+
+.checkMarks {
+	li {
+		padding: 17px 0 20px;
+		border-top: 1px solid #e5e5e5;
+
+		&:first-child {
+			border-top: 0;
+		}
+
+		a::before {
+			content: "";
+			@include awesome-icon(22px);
+			padding-right: 20px;
+		}
+	}
+}

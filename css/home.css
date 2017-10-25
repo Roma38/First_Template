@@ -1,4 +1,58 @@
 @charset "UTF-8";
+.tileList {
+  border-bottom: 3px solid #62bfe6; }
+
+.tileList__item {
+  text-align: center;
+  padding: 50px 0; }
+
+.tileList__item__icon {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background: #62bfe6;
+  margin: auto;
+  font: normal 52px FontAwesome;
+  line-height: 100px;
+  color: white; }
+
+@media screen and (min-width: 768px) {
+  .tileList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .tileList h3 {
+      margin-top: 0; }
+    .tileList p {
+      margin-bottom: 0; }
+
+  .tileList__item {
+    overflow: auto;
+    /* margin-right: 30px; */
+    width: 48%;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5; }
+
+  .tileList__item__text {
+    margin-left: 130px; }
+
+  .tileList__item__icon {
+    float: left; } }
+.checkMarks li {
+  padding: 17px 0 20px;
+  border-top: 1px solid #e5e5e5; }
+  .checkMarks li:first-child {
+    border-top: 0; }
+  .checkMarks li a::before {
+    content: "";
+    font: normal 22px FontAwesome;
+    padding-right: 20px; }
+
+.home-block1, .home-block2 {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
 /* SLIDER */
 .slider {
   position: relative; }
@@ -20,11 +74,6 @@
 .slider + .home-block1 .blueBoxes {
   position: relative;
   margin-top: -50px; }
-
-.home-block1, .home-block2 {
-  max-width: 1190px;
-  padding: 0 10px;
-  margin: 0 auto; }
 
 /* BLUE BOXES */
 .blueBoxes {
@@ -79,5 +128,39 @@
     margin-top: -19px; }
     .blueBoxes__item:hover p::after {
       display: block; } }
+/* 	SECTION 2 */
+/*HELP CENTER*/
+.help-center {
+  background: #62bfe6;
+  padding: 1px 30px;
+  margin: 30px 0; }
+  .help-center h2 {
+    border-bottom: 1px solid white;
+    margin: 0;
+    padding: 20px 0; }
+    .help-center h2 span {
+      font: normal 50px FontAwesome; }
+  .help-center h3 {
+    margin-bottom: 0; }
+  .help-center h2, .help-center h3, .help-center p {
+    color: white; }
+
+.help-center-phone {
+  padding-top: 20px;
+  border-top: 1px solid white; }
+
+.help-center-phone + p {
+  font-size: 16px; }
+
+@media screen and (min-width: 768px) {
+  .home-block2 {
+    display: flex; }
+
+  .home-block2__column {
+    padding: 0 30px;
+    width: 33%; }
+
+  .aboutPic {
+    width: 100%; } }
 
 /*# sourceMappingURL=home.css.map */

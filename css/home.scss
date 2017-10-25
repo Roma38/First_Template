@@ -1,6 +1,20 @@
+
+
 @import 'var.scss';
 
+@import 'tileList.scss';
+
+@import 'checkMarks.scss';
+
+$col_padding: 30px;
+
 $arrow-icon-size: 19px;
+
+.home-block1, .home-block2 {
+	max-width: 1190px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
 
 /* SLIDER */
 
@@ -29,11 +43,7 @@ $arrow-icon-size: 19px;
 	margin-top: -50px;
 }
 
-.home-block1, .home-block2 {
-	max-width: 1190px;
-	padding: 0 10px;
-	margin: 0 auto;
-}
+
 
 /* BLUE BOXES */
 
@@ -108,5 +118,58 @@ $arrow-icon-size: 19px;
 		p::after {
 			display: block;
 		}
+	}
+}
+
+/* 	SECTION 2 */
+
+	/*HELP CENTER*/
+
+.help-center {
+	background: $primary-color;
+	padding: 1px 30px;
+
+	margin: 30px 0;
+
+	h2 {
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding: 20px 0;
+
+		span {
+			@include awesome-icon(50px);
+		}
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	h2,h3,p {
+		color: white;
+	}
+}
+
+.help-center-phone {
+	padding-top: 20px;
+	border-top: 1px solid white;
+}
+
+.help-center-phone + p {
+	font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.home-block2 {
+		display: flex;
+	}
+
+	.home-block2__column {
+		padding: 0 $col_padding;
+		width: 33%;
+	}
+
+	.aboutPic {
+		width: 100%;
 	}
 }

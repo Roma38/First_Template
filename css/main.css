@@ -222,6 +222,18 @@ ul {
 .nav {
   display: none; }
 
+.button {
+  color: white;
+  font-weight: 500;
+  background: #62bfe6;
+  padding: 18px 30px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 0; }
+
+.button:hover {
+  color: white; }
+
 @media screen and (min-width: 768px) {
   .toggle--mobile {
     display: none; }

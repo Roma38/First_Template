@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,cAAG;EACF,UAAU,EAAE,iBAAiB;EAC7B,MAAM,EAAE,IAAI;EAEZ,gBAAE;IACD,WAAW,EAAE,IAAI;EAGlB,0BAAc;IACb,UAAU,EAAE,CAAC",
+"sources": ["checkMarks.scss"],
+"names": [],
+"file": "checkMarks.css"
+}
