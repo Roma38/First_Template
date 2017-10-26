@@ -1,8 +1,8 @@
 .header {
   position: relative;
-  max-width: 1190px;
-  padding: 0 10px;
-  margin: 60px auto 0;
+  /* max-width: 1190px;
+  padding: 0 10px; */
+  margin-top: 60px;
   overflow: auto;
   text-align: center; }
 

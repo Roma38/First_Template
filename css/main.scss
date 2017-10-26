@@ -26,6 +26,12 @@ body {
 	margin: 0;
 }
 
+.wrapper {
+	max-width: 420px + 20px; // + 2*padding 
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
 h2, h3 {
 	font-weight: normal;
 	font-family: Roboto, sans-serif;
@@ -81,6 +87,10 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+	.wrapper {
+		max-width: 1190px;
+	}
+
 	.toggle--mobile { /* TODO do we need modifier here? */
 		display: none;
 	}

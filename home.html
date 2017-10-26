@@ -46,17 +46,19 @@
 	</ul>
 </nav>
 
-<header class="header">	
-	<div class="header__logo">
-		<h1>Business </h1> 
-		<h3>Company</h3>
-	</div>
+<div class="wrapper">
+	<header class="header">	
+		<div class="header__logo">
+			<h1>Business </h1> 
+			<h3>Company</h3>
+		</div>
 
-	<div class="header__phone">
-		<h3><span> </span>800-2345-6789</h3> <!-- TODO: this is not a header (h3) -->
-		<p>One of our representatives will happily contact you within 24 hours. For urgent needs call us at</p>
-	</div>
-</header>
+		<div class="header__phone">
+			<h3><span> </span>800-2345-6789</h3> <!-- TODO: this is not a header (h3) -->
+			<p>One of our representatives will happily contact you within 24 hours. For urgent needs call us at</p>
+		</div>
+	</header>
+</div>
 
 <nav class="nav">
 	<ul class="nav__list">
@@ -89,141 +91,145 @@
 		<h1 class="slider__text">Helping with any of your<br>business needs!</h1>
 	</div>
 
-	<section class="home-block1">
+	<div class="wrapper">
+		<section class="home-block1">
 
-		<div class="blueBoxes">
-			<div class="blueBoxes__pair">
-				<div class="blueBoxes__item blueBoxes__item--i1"> <!-- TODO don't need modifier. Use nth-child() instead. -->
-					<span></span>
-					<h3>Global<br> research</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			<div class="blueBoxes">
+				<div class="blueBoxes__pair">
+					<div class="blueBoxes__item blueBoxes__item--i1"> <!-- TODO don't need modifier. Use nth-child() instead. -->
+						<span></span>
+						<h3>Global<br> research</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					</div>
+					<div class="blueBoxes__item blueBoxes__item--i2">
+						<span></span>
+						<h3>Creative<br> ideas</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					</div>
 				</div>
-				<div class="blueBoxes__item blueBoxes__item--i2">
-					<span></span>
-					<h3>Creative<br> ideas</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+				<div class="blueBoxes__pair">
+					<div class="blueBoxes__item blueBoxes__item--i3">
+						<span></span>
+						<h3>New<br> services</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					</div>
+					<div class="blueBoxes__item blueBoxes__item--i4">
+						<span></span>
+						<h3>Pro<br> management</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					</div>
 				</div>
 			</div>
-			<div class="blueBoxes__pair">
-				<div class="blueBoxes__item blueBoxes__item--i3">
-					<span></span>
-					<h3>New<br> services</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+
+			<div class="tileList">
+				<div class="tileList__item">
+					<div class="tileList__item__icon"></div>
+					<div class="tileList__item__text">
+						<h3>Incididunt ut labore et dolore</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+					</div>	
 				</div>
-				<div class="blueBoxes__item blueBoxes__item--i4">
-					<span></span>
-					<h3>Pro<br> management</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+				<div class="tileList__item">
+					<div class="tileList__item__icon"></div>
+					<div class="tileList__item__text">
+						<h3>Incididunt ut labore et dolore</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+					</div>	
+				</div>
+				<div class="tileList__item">
+					<div class="tileList__item__icon"></div>
+					<div class="tileList__item__text">
+						<h3>Incididunt ut labore et dolore</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+					</div>	
+				</div>
+				<div class="tileList__item">
+					<div class="tileList__item__icon"></div>
+					<div class="tileList__item__text">
+						<h3>Incididunt ut labore et dolore</h3>
+						<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+					</div>	
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="tileList">
-			<div class="tileList__item">
-				<div class="tileList__item__icon"></div>
-				<div class="tileList__item__text">
-					<h3>Incididunt ut labore et dolore</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-				</div>	
-			</div>
-			<div class="tileList__item">
-				<div class="tileList__item__icon"></div>
-				<div class="tileList__item__text">
-					<h3>Incididunt ut labore et dolore</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-				</div>	
-			</div>
-			<div class="tileList__item">
-				<div class="tileList__item__icon"></div>
-				<div class="tileList__item__text">
-					<h3>Incididunt ut labore et dolore</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-				</div>	
-			</div>
-			<div class="tileList__item">
-				<div class="tileList__item__icon"></div>
-				<div class="tileList__item__text">
-					<h3>Incididunt ut labore et dolore</h3>
-					<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-				</div>	
-			</div>
-		</div>
-	</section>
+		<section class="home-block2">
+			<article class="home-block2__column">
+				<h2>About</h2>
+				<img class="aboutPic" src="images/page-1_img01.jpg" alt="">
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu.<br>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				<a href="#" class="button">Read more</a>
+			</article>
 
-	<section class="home-block2">
-		<article class="home-block2__column">
-			<h2>About</h2>
-			<img class="aboutPic" src="images/page-1_img01.jpg" alt="">
-			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu.<br>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-			<a href="#" class="button">Read more</a>
-		</article>
+			<div class="home-block2__column">
+				<h2>Services</h2>
+				<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
-		<div class="home-block2__column">
-			<h2>Services</h2>
-			<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<ul class="checkMarks">
+					<li><a href="#">Lorem ipsum dolor sit amet </a></li>
+					<li><a href="#">Conse ctetur adipisicing </a></li>
+					<li><a href="#">Elit sed do eiusmod tempor</a></li>
+					<li><a href="#">Incididunt ut labore</a></li>
+					<li><a href="#">Et dolore magna aliqua</a></li>
+					<li><a href="#">Ut enim ad minim veniam</a></li>
+					<li><a href="#">Quis nostrud exercitation</a></li>
+					<li><a href="#">Incididunt ut labore</a></li>
+					<li><a href="#">Et dolore magna aliqua</a></li>
+				</ul>
 
-			<ul class="checkMarks">
-				<li><a href="#">Lorem ipsum dolor sit amet </a></li>
-				<li><a href="#">Conse ctetur adipisicing </a></li>
-				<li><a href="#">Elit sed do eiusmod tempor</a></li>
-				<li><a href="#">Incididunt ut labore</a></li>
-				<li><a href="#">Et dolore magna aliqua</a></li>
-				<li><a href="#">Ut enim ad minim veniam</a></li>
-				<li><a href="#">Quis nostrud exercitation</a></li>
-				<li><a href="#">Incididunt ut labore</a></li>
-				<li><a href="#">Et dolore magna aliqua</a></li>
-			</ul>
-
-			<a href="#" class="button">Read more</a>
-		</div>
-
-		<div class="home-block2__column">
-			<div class="help-center">
-				<h2><span></span> Help center:</h2>
-				<h3>Ask professionals:</h3>
-				<p>Monday - Friday: 8am-7pm</br>Saturday: 8am-5pm</br>Sunday: 1pm-5pm</p>
-				<h3 class="help-center-phone">24/7 Online Support:</h3>
-				<p>800-2345-6789</p>
+				<a href="#" class="button">Read more</a>
 			</div>
 
-			<div class="small-carousel">
-				<img src="images/page-1_img02.jpg" alt="">
-				<p><span></span> Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-				<a href="#">Incididunt ut labor</a>
+			<div class="home-block2__column">
+				<div class="help-center">
+					<h2><span></span> Help center:</h2>
+					<h3>Ask professionals:</h3>
+					<p>Monday - Friday: 8am-7pm</br>Saturday: 8am-5pm</br>Sunday: 1pm-5pm</p>
+					<h3 class="help-center-phone">24/7 Online Support:</h3>
+					<p>800-2345-6789</p>
+				</div>
+
+				<div class="small-carousel">
+					<img src="images/page-1_img02.jpg" alt="">
+					<p><span></span> Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+					<a href="#">Incididunt ut labor</a>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 </main>
 
 <footer>
-	<div class="contactInfo">
-		<div class="contactInfo__item">
-			<div class="contactInfo__item__icon"></div>
-			<span>4578 Marmora Road,Glasgow<br>D04 89GR</span>
+	<div class="wrapper">
+		<div class="contactInfo">
+			<div class="contactInfo__item">
+				<div class="contactInfo__item__icon"></div>
+				<span>4578 Marmora Road,Glasgow<br>D04 89GR</span>
+			</div>
+			<div class="contactInfo__item">
+				<div class="contactInfo__item__icon"></div>
+				<h3><a href="#">800-2345-6789</a></h3>
+			</div>
+			<div class="contactInfo__item">
+				<div class="contactInfo__item__icon"></div>
+				<a href="#">Follow on facebook</a>
+			</div>
+			<div class="contactInfo__item">
+				<div class="contactInfo__item__icon"></div>
+				<a href="#">info@demolink.org</a>
+			</div>
+			<div class="contactInfo__item">
+				<div class="contactInfo__item__icon"></div>
+				<h3><a href="#">800-2345-6790</a></h3>
+			</div>
+			<div class="contactInfo__item">
+				<div class="contactInfo__item__icon"></div>
+				<a href="#">Follow on Twitter</a>
+			</div>
 		</div>
-		<div class="contactInfo__item">
-			<div class="contactInfo__item__icon"></div>
-			<h3><a href="#">800-2345-6789</a></h3>
-		</div>
-		<div class="contactInfo__item">
-			<div class="contactInfo__item__icon"></div>
-			<a href="#">Follow on facebook</a>
-		</div>
-		<div class="contactInfo__item">
-			<div class="contactInfo__item__icon"></div>
-			<a href="#">info@demolink.org</a>
-		</div>
-		<div class="contactInfo__item">
-			<div class="contactInfo__item__icon"></div>
-			<h3><a href="#">800-2345-6790</a></h3>
-		</div>
-		<div class="contactInfo__item">
-			<div class="contactInfo__item__icon"></div>
-			<a href="#">Follow on Twitter</a>
-		</div>
-	</div>
 
-	<p>Business Company © 2015. <a href="#"> Privacy Policy</a></p>
+		<p>Business Company © 2015. <a href="#"> Privacy Policy</a></p>
+	</div>
 </footer>
 
 </body>

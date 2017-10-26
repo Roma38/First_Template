@@ -4,7 +4,6 @@
 
 .nav__list {
   display: flex;
-  /* justify-content: flex-start; */
   height: 100%;
   max-width: 1190px;
   padding: 0 10px;
@@ -41,6 +40,7 @@
   display: block; }
 
 .nav__dropdown {
+  /* z-index: 1; */
   position: absolute;
   top: 100%;
   background: #f2f2f2;

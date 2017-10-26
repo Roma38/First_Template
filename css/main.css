@@ -67,9 +67,9 @@
 
 .header {
   position: relative;
-  max-width: 1190px;
-  padding: 0 10px;
-  margin: 60px auto 0;
+  /* max-width: 1190px;
+  padding: 0 10px; */
+  margin-top: 60px;
   overflow: auto;
   text-align: center; }
 
@@ -107,7 +107,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* justify-content: flex-start; */
   height: 100%;
   max-width: 1190px;
   padding: 0 10px;
@@ -148,6 +147,7 @@
   display: block; }
 
 .nav__dropdown {
+  /* z-index: 1; */
   position: absolute;
   top: 100%;
   background: #f2f2f2;
@@ -190,6 +190,11 @@ html {
 
 body {
   margin: 0; }
+
+.wrapper {
+  max-width: 440px;
+  padding: 0 10px;
+  margin: 0 auto; }
 
 h2, h3, .currentPage--mobile {
   font-weight: normal;
@@ -236,6 +241,9 @@ ul {
   color: white; }
 
 @media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1190px; }
+
   .toggle--mobile {
     /* TODO do we need modifier here? */
     display: none; }
@@ -248,4 +256,5 @@ ul {
 
   .nav {
     display: block; } }
+
 /*# sourceMappingURL=main.css.map */

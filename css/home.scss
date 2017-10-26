@@ -1,24 +1,23 @@
-
-
 @import 'var.scss';
 
 @import 'tileList.scss';
 
 @import 'checkMarks.scss';
 
-$col_padding: 30px;
+$col_padding: 15px;
 
 $arrow-icon-size: 19px;
 
-.home-block1, .home-block2 {
+/* .home-block1, .home-block2 {
 	max-width: 1190px;
 	padding: 0 10px;
 	margin: 0 auto;
-}
+} */
 
 /* SLIDER */
 
 .slider {
+	z-index: -1;
 	position: relative;
 }
 
@@ -164,11 +163,12 @@ $arrow-icon-size: 19px;
 @media screen and (min-width: 768px) {
 	.home-block2 {
 		display: flex;
+		margin: 0 (-$col_padding);
 	}
 
 	.home-block2__column {
 		padding: 0 $col_padding;
-		width: 33%;
+		width: 33.333%;
 	}
 
 	.aboutPic {
