@@ -118,22 +118,26 @@
 .blueBoxes p::after {
   content: "";
   font: normal 19px FontAwesome;
-  display: block;
+  display: none;
   text-align: right;
   position: relative;
   top: 15px; }
 
-@media screen and (min-width: 520px) {
+.blueBoxes__item:hover {
+  margin-top: -19px; }
+  .blueBoxes__item:hover p::after {
+    display: block; }
+
+@media screen and (min-width: 535px) {
   .blueBoxes__item {
     text-align: left; } }
-@media screen and (min-width: 1020px) {
-  .blueBoxes p::after {
-    display: none; }
+/* @media screen and (min-width: 1020px) {
+	.blueBoxes p::after {
+		display: none;
+	}
 
-  .blueBoxes__item:hover {
-    margin-top: -19px; }
-    .blueBoxes__item:hover p::after {
-      display: block; } }
+	
+} */
 /* 	SECTION 2 */
 /*HELP CENTER*/
 .help-center {

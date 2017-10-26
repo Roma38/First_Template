@@ -31,17 +31,13 @@
 	z-index: 1;
 	height: 100%;
 	width: 240px;
-	left: -240px;
+	left: -240px - 3px; // width + shadow
 	transition: left 1s;
 	box-shadow: 3px 0 3px rgba(0, 0, 0, 0.1);
 }
 
 #navToggle, #navToggle--dropdown {
 	display: none;
-}
-
-.nav__list--mobile {
-	/* padding-top: 70px; */	
 }
 
 .nav__item--mobile a {

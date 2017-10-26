@@ -94,32 +94,34 @@ $arrow-icon-size: 19px;
 .blueBoxes p::after {
 	content: "";
 	@include awesome-icon($arrow-icon-size);
-	display: block;
+	display: none;
 	text-align: right;
 	position: relative;
 	top: 15px;
 }
 
+.blueBoxes__item:hover {
+	margin-top: -$arrow-icon-size;
 
-@media screen and (min-width: 520px) {
+	p::after {
+		display: block;
+	}
+}
+
+
+@media screen and (min-width: 535px) {
 	.blueBoxes__item {
 		text-align: left;
 	}
 }
 
-@media screen and (min-width: 1020px) {
+/* @media screen and (min-width: 1020px) {
 	.blueBoxes p::after {
 		display: none;
 	}
 
-	.blueBoxes__item:hover {
-		margin-top: -$arrow-icon-size;
-
-		p::after {
-			display: block;
-		}
-	}
-}
+	
+} */
 
 /* 	SECTION 2 */
 
