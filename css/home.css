@@ -16,6 +16,9 @@
   line-height: 100px;
   color: white; }
 
+.tileList__item__icon:hover {
+  background: #57aacd; }
+
 @media screen and (min-width: 768px) {
   .tileList {
     display: flex;
@@ -54,11 +57,6 @@
       font: normal 22px FontAwesome;
       padding-right: 20px; }
 
-/* .home-block1, .home-block2 {
-	max-width: 1190px;
-	padding: 0 10px;
-	margin: 0 auto;
-} */
 /* SLIDER */
 .slider {
   z-index: -1;
@@ -132,13 +130,6 @@
 @media screen and (min-width: 535px) {
   .blueBoxes__item {
     text-align: left; } }
-/* @media screen and (min-width: 1020px) {
-	.blueBoxes p::after {
-		display: none;
-	}
-
-	
-} */
 /* 	SECTION 2 */
 /*HELP CENTER*/
 .help-center {
@@ -162,6 +153,24 @@
 
 .help-center-phone + p {
   font-size: 16px; }
+
+.small-carousel {
+  padding: 30px 15px;
+  background: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap; }
+  .small-carousel img {
+    padding-bottom: 30px; }
+  .small-carousel div {
+    padding: 0 15px; }
+    .small-carousel div:last-child {
+      flex-basis: 165px;
+      flex-grow: 1; }
+      .small-carousel div:last-child p {
+        margin-top: 0; }
+        .small-carousel div:last-child p span {
+          font: normal 34px FontAwesome;
+          color: #62bfe6; }
 
 @media screen and (min-width: 768px) {
   .home-block2 {

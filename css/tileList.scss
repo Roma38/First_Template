@@ -1,3 +1,5 @@
+@import "var.scss";
+
 .tileList {
 	border-bottom: 3px solid $primary-color;
 }
@@ -16,6 +18,10 @@
 	@include awesome-icon(52px);
 	line-height: 100px;
 	color: white;
+}
+
+.tileList__item__icon:hover {
+	background: #57aacd;
 }
 
 @media screen and (min-width: 768px) {

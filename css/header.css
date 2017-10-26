@@ -1,7 +1,5 @@
 .header {
   position: relative;
-  /* max-width: 1190px;
-  padding: 0 10px; */
   margin-top: 60px;
   overflow: auto;
   text-align: center; }
@@ -21,7 +19,6 @@
   margin-bottom: -11px; }
 .header__phone span {
   font: normal 34px FontAwesome;
-  /* font: normal 34px FontAwesome; */
   color: #62bfe6;
   margin-right: 10px; }
 

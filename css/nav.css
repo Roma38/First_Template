@@ -40,7 +40,6 @@
   display: block; }
 
 .nav__dropdown {
-  /* z-index: 1; */
   position: absolute;
   top: 100%;
   background: #f2f2f2;
@@ -56,8 +55,7 @@
 
 .aside-menu-arrow {
   padding-left: 40px;
-  font: normal 16px FontAwesome;
-  /* font: normal 16px FontAwesome; */ }
+  font: normal 16px FontAwesome; }
 
 /* Dropdown aside menu */
 .nav__dropdown__item:hover > .nav__dropdown--aside {

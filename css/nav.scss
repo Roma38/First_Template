@@ -52,7 +52,6 @@
 }
 
 .nav__dropdown {
-	/* z-index: 1; */
 	position: absolute;
 	top: 100%;
 	background: #f2f2f2;
@@ -71,7 +70,6 @@
 .aside-menu-arrow {
 	padding-left: 40px; 
 	@include awesome-icon(16px);
-	/* font: normal 16px FontAwesome; */
 }
 
  /* Dropdown aside menu */
