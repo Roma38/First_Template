@@ -2,10 +2,11 @@
   position: relative;
   margin-top: 60px;
   overflow: auto;
-  text-align: center; }
+  text-align: center;
+  padding-top: 23px; }
 
 .header__logo {
-  margin-top: 23px; }
+  /* margin-top: 23px; */ }
   .header__logo h1 {
     margin: 0;
     display: inline-block;
@@ -15,12 +16,18 @@
     margin-left: 7px;
     display: inline-block; }
 
-.header__phone h3 {
-  margin-bottom: -11px; }
-.header__phone span {
-  font: normal 34px FontAwesome;
-  color: #62bfe6;
-  margin-right: 10px; }
+.header__phone {
+  /* h3 {
+  	margin-bottom: -11px;
+  } */ }
+  .header__phone a {
+    color: #434547; }
+    .header__phone a:hover {
+      color: #62bfe6; }
+  .header__phone span {
+    font: normal 34px FontAwesome;
+    color: #62bfe6;
+    margin-right: 10px; }
 
 @media screen and (min-width: 1000px) {
   .header__logo {
