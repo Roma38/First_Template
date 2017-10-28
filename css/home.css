@@ -59,26 +59,63 @@
 
 /* SLIDER */
 .slider {
-  z-index: -1;
-  position: relative; }
-
-.slider__slide {
-  background: #f8f8f8 url("../images/page-1_slide01.jpg") no-repeat 20%;
-  background-size: contain;
+  position: relative;
   height: 42vw;
   min-height: 350px;
   max-height: 632px; }
 
-.slider__text {
+.slider__slide {
+  background: #f8f8f8 no-repeat 20%;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
   position: absolute;
+  /* height: 42vw;
+  min-height: 350px;
+  max-height: 632px; */ }
+  .slider__slide::after {
+    content: "Helping with any of your business needs!";
+    position: absolute;
+    font: normal 5vw Roboto, sans-serif;
+    color: #62bfe6;
+    top: 30%;
+    left: 50%; }
+
+.slide1 {
+  background-image: url("../images/page-1_slide01.jpg"); }
+
+.slide2 {
+  background-image: url("../images/page-1_slide02.jpg"); }
+
+.slide3 {
+  background-image: url("../images/page-1_slide03.jpg"); }
+
+.slider__text {
+  /* position: absolute;
   font: normal 5vw Roboto, sans-serif;
-  color: #62bfe6;
+  color: $primary-color;
   top: 30%;
-  left: 50%; }
+  left: 50%; */ }
 
 .slider + .home-block1 .blueBoxes {
   position: relative;
   margin-top: -50px; }
+
+.slider-btn {
+  position: absolute;
+  font: normal 36px FontAwesome;
+  top: 50%;
+  color: #62bfe6;
+  background: none;
+  border: 0; }
+  .slider-btn:hover {
+    color: #434547; }
+
+#prev-slide {
+  left: 5%; }
+
+#next-slide {
+  right: 5%; }
 
 /* BLUE BOXES */
 .blueBoxes {
