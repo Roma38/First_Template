@@ -47,6 +47,10 @@
 		border-bottom: 1px solid #e5e5e5;
 	}
 
+	.tileList__item:last-child, .tileList__item:last-child(2) {
+		border-bottom: 0;	// TODO: not working!!!
+	}
+
 	.tileList__item__text {
 		margin-left: 130px;
 	}

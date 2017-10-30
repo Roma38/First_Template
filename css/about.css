@@ -1,0 +1,125 @@
+.tileList {
+  border-bottom: 3px solid #62bfe6; }
+
+.tileList__item {
+  text-align: center;
+  padding: 50px 0; }
+
+.tileList__item__icon {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background: #62bfe6;
+  margin: auto;
+  font: normal 52px FontAwesome;
+  line-height: 100px;
+  color: white; }
+
+.tileList__item__icon:hover {
+  background: #57aacd; }
+
+@media screen and (min-width: 768px) {
+  .tileList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .tileList h3 {
+      margin-top: 0; }
+    .tileList p {
+      margin-bottom: 0; }
+
+  .tileList__item {
+    overflow: auto;
+    /* margin-right: 30px; */
+    width: 48%;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5; }
+
+  .tileList__item:last-child, .tileList__item:last-child(2) {
+    border-bottom: 0; }
+
+  .tileList__item__text {
+    margin-left: 130px; }
+
+  .tileList__item__icon {
+    float: left; } }
+/*   BLOCK 1   */
+.about-block1 {
+  margin: 40px -15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* border-bottom: 3px solid $primary-color; */ }
+
+video {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  flex-grow: 1; }
+
+.about-block1__text {
+  flex-grow: 1;
+  flex-basis: 480px;
+  padding: 15px; }
+  .about-block1__text h2 {
+    /* width: 100%; */
+    margin: 0; }
+
+.about-block1__text__wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
+.about-block1__column {
+  flex-grow: 1;
+  flex-basis: 250px; }
+
+/*   BLOCK 2   */
+.about-block2 {
+  border-top: 3px solid #62bfe6; }
+
+.about-block2__wrap {
+  margin: 0 -15px;
+  display: flex; }
+
+.about-block2__column {
+  padding: 0 15px; }
+
+.about-block2__column > div:first-child {
+  border-bottom: 1px solid #e5e5e5; }
+
+.about-block2__column__offerPic {
+  text-align: center; }
+
+.about-block2__column__staffPic {
+  min-width: 350px; }
+
+/*   BLOCK 3   */
+.about-block3 {
+  background-color: #62bfe6; }
+  .about-block3 h2 {
+    color: white;
+    padding-top: 35px; }
+
+.tileList--inverted .tileList__item__icon {
+  background: white;
+  color: #62bfe6; }
+.tileList--inverted h3, .tileList--inverted p {
+  color: white; }
+.tileList--inverted .tileList__item {
+  border-color: white; }
+
+/*   BLOCK 4   */
+.about-block4 {
+  margin: 0 -15px;
+  display: flex; }
+
+.about-block4__column {
+  padding: 15px;
+  flex-basis: 500px; }
+
+@media screen and (max-width: 767px) {
+  main {
+    text-align: center; }
+
+  .about-block2__wrap, .about-block4 {
+    flex-wrap: wrap; } }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,117 @@
+@import 'var.scss';
+
+@import 'tileList.scss';
+
+/*   BLOCK 1   */
+
+.about-block1 {
+	margin: 40px -15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	/* border-bottom: 3px solid $primary-color; */
+}
+	video {
+		padding: 0 15px;
+		margin-bottom: 20px;
+		flex-grow: 1;
+	}
+
+.about-block1__text {
+	flex-grow: 1;
+	flex-basis: 480px;
+	padding: 15px;	
+
+	h2 {
+		/* width: 100%; */
+		margin: 0;
+	}
+}
+
+.about-block1__text__wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-block1__column {
+	flex-grow: 1;
+	flex-basis: 250px;
+}
+
+/*   BLOCK 2   */
+
+.about-block2 {
+	border-top: 3px solid $primary-color;
+}
+
+.about-block2__wrap {
+	margin: 0 -15px;
+	display: flex;
+}
+
+.about-block2__column {
+	padding: 0 15px;
+}
+
+.about-block2__column > div:first-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.about-block2__column__offerPic {
+	text-align: center;
+}
+
+.about-block2__column__staffPic{
+	min-width: 350px;
+}
+
+
+/*   BLOCK 3   */
+
+.about-block3 {
+	background-color: $primary-color;
+
+	h2 {
+		color: white;
+		padding-top: 35px;
+	}
+}
+
+.tileList--inverted {
+	.tileList__item__icon {
+		background: white;
+		color: $primary-color;
+	}
+
+	h3, p {
+		color: white;
+	}
+
+	.tileList__item {
+		border-color: white;
+	}
+}
+
+/*   BLOCK 4   */
+
+.about-block4 {
+	margin: 0 -15px;
+	display: flex;
+}
+
+.about-block4__column {
+	padding: 15px;
+	flex-basis: 500px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	main {
+		text-align: center;
+	}
+
+	.about-block2__wrap, .about-block4 {
+		flex-wrap: wrap;
+	}
+}

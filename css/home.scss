@@ -29,7 +29,7 @@ $arrow-icon-size: 19px;
 	max-height: 632px; */
 
 	&::after{
-		content: "Helping with any of your business needs!";
+		/* content: "Helping with any of your business needs!"; */
 		position: absolute;
 		font: normal 5vw Roboto, sans-serif;
 		color: $primary-color;
@@ -40,23 +40,28 @@ $arrow-icon-size: 19px;
 
 .slide1 {
 	background-image:  url("../images/page-1_slide01.jpg");
+
+	&::after{
+		content: "Helping with any of your business needs!";
+	}
 }
 
 .slide2 {
 	background-image:  url("../images/page-1_slide02.jpg");
+
+	&::after{
+		content: "The best strategies to attract new business";
+	}	
 }
 
 .slide3 {
 	background-image:  url("../images/page-1_slide03.jpg");
+
+	&::after{
+		content: "A wide range of global business information";
+	}
 }
 
-.slider__text {
-	/* position: absolute;
-	font: normal 5vw Roboto, sans-serif;
-	color: $primary-color;
-	top: 30%;
-	left: 50%; */
-}
 
 .slider + .home-block1 .blueBoxes {
 	position: relative;
@@ -116,19 +121,19 @@ $arrow-icon-size: 19px;
 	}
 }
 
-.blueBoxes__item--i1 {
+.blueBoxes__pair:nth-child(1) .blueBoxes__item:nth-child(1) {
 	background: #57aacd;
 } 
 
-.blueBoxes__item--i2 {
+.blueBoxes__pair:nth-child(1) .blueBoxes__item:nth-child(2) {
 	background:  #55b0d6;
 }
 
-.blueBoxes__item--i3 {
+.blueBoxes__pair:nth-child(2) .blueBoxes__item:nth-child(1) {
 	background: #5bb7de;
 }
 
-.blueBoxes__item--i4 {
+.blueBoxes__pair:nth-child(2) .blueBoxes__item:nth-child(2) {
 	background: #62bfe6;
 }
 
