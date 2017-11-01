@@ -107,6 +107,7 @@ $arrow-icon-size: 19px;
 }
 
 .blueBoxes__item {
+	position: relative;
 	flex-grow: 1;
 	flex-basis: 250px;
 	padding: 30px;
@@ -155,7 +156,7 @@ $arrow-icon-size: 19px;
 }
 
 
-@media screen and (min-width: 535px) {
+@media screen and (min-width: 768px) {
 	.blueBoxes__item {
 		text-align: left;
 	}

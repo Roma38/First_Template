@@ -41,13 +41,12 @@
 
 	.tileList__item {
 		overflow: auto;
-		/* margin-right: 30px; */
 		width: 48%;
 		text-align: left;
 		border-bottom: 1px solid #e5e5e5;
 	}
 
-	.tileList__item:last-child, .tileList__item:last-child(2) {
+	.tileList__item:last-child, .tileList__item:nth-last-child(2) {
 		border-bottom: 0;	// TODO: not working!!!
 	}
 

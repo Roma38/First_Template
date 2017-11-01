@@ -29,8 +29,8 @@ body {
 }
 
 .wrapper {
-	max-width: 420px + 20px; // + 2*padding 
-	padding: 0 10px;
+	max-width: 420px + 30px; // + 2*padding 
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ ul {
 
 @media screen and (min-width: 768px) {
 	.wrapper {
-		max-width: 1190px;
+		max-width: 1200px;
 	}
 
 	.toggle--mobile { /* TODO do we need modifier here? */

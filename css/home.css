@@ -31,12 +31,11 @@
 
   .tileList__item {
     overflow: auto;
-    /* margin-right: 30px; */
     width: 48%;
     text-align: left;
     border-bottom: 1px solid #e5e5e5; }
 
-  .tileList__item:last-child, .tileList__item:last-child(2) {
+  .tileList__item:last-child, .tileList__item:nth-last-child(2) {
     border-bottom: 0; }
 
   .tileList__item__text {
@@ -132,6 +131,7 @@
   align-items: flex-end; }
 
 .blueBoxes__item {
+  position: relative;
   flex-grow: 1;
   flex-basis: 250px;
   padding: 30px;
@@ -166,7 +166,7 @@
   .blueBoxes__item:hover p::after {
     display: block; }
 
-@media screen and (min-width: 535px) {
+@media screen and (min-width: 768px) {
   .blueBoxes__item {
     text-align: left; } }
 /* 	SECTION 2 */

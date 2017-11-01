@@ -20,9 +20,14 @@
 
 @media screen and (min-width: 768px) {
   .tileList {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .tileList h3 {
       margin-top: 0; }
     .tileList p {
@@ -30,12 +35,11 @@
 
   .tileList__item {
     overflow: auto;
-    /* margin-right: 30px; */
     width: 48%;
     text-align: left;
     border-bottom: 1px solid #e5e5e5; }
 
-  .tileList__item:last-child, .tileList__item:last-child(2) {
+  .tileList__item:last-child, .tileList__item:nth-last-child(2) {
     border-bottom: 0; }
 
   .tileList__item__text {

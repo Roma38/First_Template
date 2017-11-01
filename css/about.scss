@@ -8,7 +8,6 @@
 	margin: 40px -15px 0;
 	display: flex;
 	flex-wrap: wrap;
-	/* border-bottom: 3px solid $primary-color; */
 }
 	video {
 		padding: 0 15px;
@@ -22,7 +21,6 @@
 	padding: 15px;	
 
 	h2 {
-		/* width: 100%; */
 		margin: 0;
 	}
 }
@@ -56,13 +54,16 @@
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.about-block2__column__offerPic {
+.about-block2__column__offerPic, .about-block2__column__staffPic {
 	text-align: center;
+	margin: -7px;
+
+	img {
+		padding: 7px;
+	}
 }
 
-.about-block2__column__staffPic{
-	min-width: 350px;
-}
+
 
 
 /*   BLOCK 3   */
@@ -113,5 +114,12 @@
 
 	.about-block2__wrap, .about-block4 {
 		flex-wrap: wrap;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.about-block2__column__staffPic {
+		min-width: 375px;
 	}
 }
