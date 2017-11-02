@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-.toggle--mobile {
+.toggle {
   position: fixed;
   top: 0;
   display: block;
@@ -290,8 +290,7 @@ ul {
   .wrapper {
     max-width: 1200px; }
 
-  .toggle--mobile {
-    /* TODO do we need modifier here? */
+  .toggle {
     display: none; }
 
   .header {
