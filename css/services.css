@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.checkMarks li {
+  padding: 17px 0 20px;
+  border-top: 1px solid #e5e5e5; }
+  .checkMarks li:first-child {
+    border-top: 0; }
+  .checkMarks li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 42px; }
+    .checkMarks li a::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      font: normal 22px FontAwesome;
+      padding-right: 20px; }
+
+.articles {
+  text-align: center; }
+  .articles article {
+    margin-bottom: 30px; }
+  .articles hr {
+    display: none;
+    border: none;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 0 15px 50px; }
+
+.services__block2 {
+  background: #f3f3f3 url("../images/page-3_bg.jpg") top center no-repeat; }
+  .services__block2::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.services__block2__content {
+  overflow: auto;
+  margin-left: 50%;
+  min-width: 300px;
+  float: right; }
+
+.services__block3__tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .services__block3__tables table {
+    border-collapse: collapse;
+    margin-bottom: 30px; }
+    .services__block3__tables table tr:nth-child(2n) {
+      background: #f5f5f5; }
+    .services__block3__tables table td {
+      padding: 15px 20px;
+      border: 1px solid #e5e5e5;
+      font: normal 14px/28px Roboto, sans-serif;
+      color: #888; }
+
+@media screen and (min-width: 768px) {
+  .articles {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -15px; }
+    .articles hr {
+      display: block; }
+    .articles article {
+      margin: 0 15px 30px;
+      -ms-flex-preferred-size: 220px;
+          flex-basis: 220px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      .articles article img {
+        width: 100%; }
+
+  .services__block2__content {
+    float: none;
+    max-width: 600px; }
+    .services__block2__content ul {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%; }
+      .services__block2__content ul:last-child {
+        margin-left: calc(4% - 4px); } }
+
+/*# sourceMappingURL=services.css.map */
