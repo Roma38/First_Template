@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.tileList__item {
+  text-align: center;
+  padding: 50px 0; }
+
+.tileList__item__icon {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background: #62bfe6;
+  margin: auto;
+  font: normal 52px FontAwesome;
+  line-height: 100px;
+  color: white; }
+
+.tileList__item__icon:hover {
+  background: #57aacd; }
+
+@media screen and (min-width: 768px) {
+  .tileList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .tileList h3 {
+      margin-top: 0; }
+    .tileList p {
+      margin-bottom: 0; }
+
+  .tileList__item {
+    overflow: auto;
+    width: 48%;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5; }
+
+  .tileList__item:last-child, .tileList__item:nth-last-child(2) {
+    border-bottom: 0; }
+
+  .tileList__item__text {
+    margin-left: 130px; }
+
+  .tileList__item__icon {
+    float: left; } }
+.checkMarks li {
+  padding: 17px 0 20px;
+  border-top: 1px solid #e5e5e5; }
+  .checkMarks li:first-child {
+    border-top: 0; }
+  .checkMarks li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 42px; }
+    .checkMarks li a::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      font: normal 22px FontAwesome;
+      padding-right: 20px; }
+
+.coordinates {
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 40px -0px; }
+  .coordinates div {
+    margin: 40px 15px 30px; }
+
+.coordinates__state {
+  margin: 0;
+  color: #62bfe6; }
+
+.coordinates__schedule {
+  font-size: 16px; }
+
+.faqs__block2 {
+  background: #f5f5f5; }
+
+.faqsButtons .button--mod {
+  margin-right: 20px; }
+
+.faqs__block3__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .faqs__block3__part img {
+    margin-right: 30px; }
+
+@media screen and (min-width: 768px) {
+  .coordinates {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+/*# sourceMappingURL=faqs.css.map */

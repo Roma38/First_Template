@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.tileList {
-  border-bottom: 3px solid #62bfe6; }
-
 .tileList__item {
   text-align: center;
   padding: 50px 0; }
@@ -58,6 +55,9 @@
       content: "";
       font: normal 22px FontAwesome;
       padding-right: 20px; }
+
+.home-block1 {
+  border-bottom: 3px solid #62bfe6; }
 
 /* SLIDER */
 .slider {

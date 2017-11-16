@@ -84,9 +84,32 @@ ul {
 	margin: 20px 0;
 }
 
-.button:hover {
+.button:hover, .button.button--mod:hover {
 	color: white;
+	background: #4ab5e2;
 }
+
+.button.button--mod {
+	color: $primary-color;
+	background: #eaeaea;
+}
+
+.contact__phone {
+	font-size: 24px;
+	color: $secondary-color;
+
+	&.contact__phone--grey {
+		color: #888a8c;
+	}
+
+	&:hover {
+		color: $primary-color;
+	}
+
+
+}
+
+
 
 @media screen and (min-width: 768px) {
 	.wrapper {

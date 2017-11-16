@@ -25,15 +25,6 @@
 }
 
 .header__phone {
-
-	a {
-		color: $secondary-color;
-
-		&:hover {
-			color: $primary-color;
-		}
-	}
-
 	span {
 		@include awesome-icon(34px);
 		color: $primary-color;
