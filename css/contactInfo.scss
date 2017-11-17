@@ -16,6 +16,14 @@
 		color: #888a8c;
 		font: normal 16px/28px Roboto, sans-serif;
 	}
+
+	a {
+		color: #888a8c;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
 }
 
 .contactInfo__item__icon {

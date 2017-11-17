@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>FAQS</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/contacts.css">
+</head>
+
+<body>
+
+<div class="toggle">
+	<label for="navToggle" class="toggleIcon"> </label>
+	<span class="currentPage--mobile">Contacts</span>
+</div>
+
+<input type="checkbox" id="navToggle">
+<nav class="nav--mobile">
+	<ul class="nav__list--mobile">
+		<li class="nav__item--mobile"><a href="home.html">Home</a></li>
+		<li class="nav__item--mobile">
+			<a href="about.html">About <label class="about__dropdown" for="navToggle--dropdown"><span class="toggleIcon--dropdown"></span></label></a>
+			<input type="checkbox" id="navToggle--dropdown">
+			<ul class="nav__dropdown--mobile">
+				<li class="nav__item--mobile"><a href="#">Lorem ipsum dolor</a></li>
+				<li class="nav__item--mobile"><a href="#">Conse ctetur adipisicing</a></li>
+				<li class="nav__item--mobile"><a href="#">Elit sed do eiusmod</a>
+					<ul>
+						<li class="nav__item--mobile"><a href="#">Lorem ipsum</a></li>
+						<li class="nav__item--mobile"><a href="#">Conse ctetur</a></li>
+						<li class="nav__item--mobile"><a href="#">Sit amet dolore</a></li>
+					</ul>
+				</li>
+				<li class="nav__item--mobile"><a href="#">Incididunt ut labore</a></li>
+				<li class="nav__item--mobile"><a href="#">Et dolore magna</a></li>
+				<li class="nav__item--mobile"><a href="#">Ut enim ad minim</a></li>	
+			</ul>
+		</li>
+		<li class="nav__item--mobile"><a href="services.html">Services</a></li>
+		<li class="nav__item--mobile"><a href="faqs.html">FAQs</a></li>
+		<li class="nav__item--mobile"><a href="contacts.html">Contacts</a></li>
+	</ul>
+</nav>
+
+<div class="wrapper">
+	<header class="header">	
+		<div class="header__logo">
+			<h1>Business </h1> 
+			<h3>Company</h3>
+		</div>
+
+		<div class="header__phone">
+			<span> </span>
+			<a href="tel:80023456789" class="contact__phone">800-2345-6789</a>
+			<p>One of our representatives will happily contact you within 24 hours. For urgent needs call us at</p>
+		</div>
+	</header>
+</div>
+
+<nav class="nav">
+	<ul class="nav__list">
+		<li class="nav__item"><a class="nav__item__link" href="home.html">Home</a></li>
+		<li class="nav__item"><a class="nav__item__link" href="about.html">About</a>
+			<ul class="nav__dropdown">
+				<li class="nav__dropdown__item"><a href="#">Lorem ipsum dolor</a></li>
+				<li class="nav__dropdown__item"><a href="#">Conse ctetur adipisicing</a></li>
+				<li class="nav__dropdown__item"><a href="#">Elit sed do eiusmod <span class= "aside-menu-arrow"></span> </a>
+					<ul class="nav__dropdown nav__dropdown--aside">
+						<li class="nav__dropdown__item"><a href="#">Lorem ipsum</a></li>
+						<li class="nav__dropdown__item"><a href="#">Conse ctetur</a></li>
+						<li class="nav__dropdown__item"><a href="#">Sit amet dolore</a></li>
+					</ul>
+				</li>
+				<li class="nav__dropdown__item"><a href="#">Incididunt ut labore</a></li>
+				<li class="nav__dropdown__item"><a href="#">Et dolore magna</a></li>
+				<li class="nav__dropdown__item"><a href="#">Ut enim ad minim</a></li>
+			</ul>
+		</li>
+		<li class="nav__item"><a class="nav__item__link" href="services.html">Services</a></li>
+		<li class="nav__item"><a class="nav__item__link" href="faqs.html">FAQs</a></li>
+		<li class="nav__item active"><a class="nav__item__link" href="contacts.html">Contacts</a></li>
+	</ul>
+</nav>
+
+<main>
+	<div class="map"></div>
+	<section class="contacts__block1">
+		<div class="wrapper">
+			<div class="contactInfo">
+				<div class="contactInfo__item">
+					<div class="contactInfo__item__icon"></div>
+					<span>4578 Marmora Road,Glasgow<br>D04 89GR</span>
+				</div>
+
+				<div class="contactInfo__item">
+					<div class="contactInfo__item__icon"></div>
+					<a class="contact__phone contact__phone--grey" href="tel:80023456789">800-2345-6789</a>
+				</div>
+
+				<div class="contactInfo__item">
+					<div class="contactInfo__item__icon"></div>
+					<a href="#">Follow on facebook</a>
+				</div>
+
+				<div class="contactInfo__item">
+					<div class="contactInfo__item__icon"></div>
+					<a href="#">info@demolink.org</a>
+				</div>
+
+				<div class="contactInfo__item">
+					<div class="contactInfo__item__icon"></div>
+					<a class="contact__phone contact__phone--grey" href="tel:80023456790">800-2345-6790</a>
+				</div>
+
+				<div class="contactInfo__item">
+					<div class="contactInfo__item__icon"></div>
+					<a href="#">Follow on Twitter</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="wrapper">
+		<section class="contacts__block2">
+			<h2>Feedback</h2>
+			<form>
+				<input type="text" name="userName" placeholder="Your Name:">
+				<input type="text" name="phone" placeholder="Telephone:">
+				<input type="email" name="email" placeholder="E-mail:">
+				<textarea placeholder="Message:"></textarea>
+				<button class="button">submit comment</button>
+			</form>
+		</section>
+	</div>
+</main>
+
+<footer>
+	<div class="wrapper">
+		<p>Business Company © 2015. <a href="#"> Privacy Policy</a></p>
+	</div>
+</footer>
+
+</body>
+
+</html>
+
